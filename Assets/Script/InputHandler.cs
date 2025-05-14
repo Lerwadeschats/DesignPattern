@@ -7,10 +7,12 @@ public class InputHandler : MonoBehaviour
     PlayerInput _inputs;
 
     InputAction _movementAction;
+    InputAction _attackAction;
 
 
 
     [SerializeField] CharacterMovement _movements;
+    [SerializeField] CharacterAttack _attack;
 
     public PlayerInput InputsPlayer { get => _inputs; set => _inputs = value; }
 
@@ -25,7 +27,11 @@ public class InputHandler : MonoBehaviour
     private void Start()
     {
         _movementAction = _inputs.actions.FindAction("Move");
-        _movementAction.Enable();
+        _movementAction?.Enable();
+
+        _attackAction = _inputs.actions.FindAction("Attack");
+        _attackAction?.Enable();
+
     }
 
     private void FixedUpdate()

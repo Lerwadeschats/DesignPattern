@@ -28,8 +28,8 @@ public class CharacterMovement : MonoBehaviour
 
     public void Move()
     {
-        
-        _navMeshAgent.speed = _playerStats.GetSpeed();
+
+        _navMeshAgent.speed = _playerStats.Speed;
         Vector3 newDirection = _direction;
         if (_direction != Vector3.zero)
         {

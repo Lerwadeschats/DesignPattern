@@ -1583,6 +1583,24 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 97087337}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &98444795 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6944734866117476437, guid: 8b89fdb0c71dd438b9b7b0ef242463bc,
+    type: 3}
+  m_PrefabInstance: {fileID: 164211095928399044}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &98444798
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 98444795}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b0d3f0dc9aca614c810dc3c4d88a723, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &98512646
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14661,6 +14679,11 @@ PrefabInstance:
         type: 3}
       propertyPath: _drawDebugGizmo
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3663377205554788563, guid: b8e63e1fcdad9425f9577e9775d324fc,
+        type: 3}
+      propertyPath: m_IsKinematic
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5429491098724704508, guid: b8e63e1fcdad9425f9577e9775d324fc,
         type: 3}
@@ -29464,6 +29487,31 @@ PrefabInstance:
       propertyPath: m_Acceleration
       value: 100
       objectReference: {fileID: 0}
+    - target: {fileID: 3170105827529232782, guid: 8b89fdb0c71dd438b9b7b0ef242463bc,
+        type: 3}
+      propertyPath: m_ActionEvents.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3170105827529232782, guid: 8b89fdb0c71dd438b9b7b0ef242463bc,
+        type: 3}
+      propertyPath: m_ActionEvents.Array.data[0].m_ActionId
+      value: f3dcfa54-f68d-4912-96a4-5b1a50e7f77e
+      objectReference: {fileID: 0}
+    - target: {fileID: 3170105827529232782, guid: 8b89fdb0c71dd438b9b7b0ef242463bc,
+        type: 3}
+      propertyPath: m_ActionEvents.Array.data[1].m_ActionId
+      value: 69eb578d-11bf-46aa-a801-c59a74ef85eb
+      objectReference: {fileID: 0}
+    - target: {fileID: 3170105827529232782, guid: 8b89fdb0c71dd438b9b7b0ef242463bc,
+        type: 3}
+      propertyPath: m_ActionEvents.Array.data[0].m_ActionName
+      value: 'Game/Move[/Keyboard/w,/Keyboard/s,/Keyboard/a,/Keyboard/d,/Keyboard/upArrow,/Keyboard/downArrow,/Keyboard/leftArrow,/Keyboard/rightArrow]'
+      objectReference: {fileID: 0}
+    - target: {fileID: 3170105827529232782, guid: 8b89fdb0c71dd438b9b7b0ef242463bc,
+        type: 3}
+      propertyPath: m_ActionEvents.Array.data[1].m_ActionName
+      value: 'Game/Attack[/Keyboard/space]'
+      objectReference: {fileID: 0}
     - target: {fileID: 3242414770405952738, guid: 8b89fdb0c71dd438b9b7b0ef242463bc,
         type: 3}
       propertyPath: _rotationSpeed
@@ -29534,10 +29582,19 @@ PrefabInstance:
       propertyPath: m_UseGravity
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9115170152858762924, guid: 8b89fdb0c71dd438b9b7b0ef242463bc,
+        type: 3}
+      propertyPath: m_IsKinematic
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 6944734866117476437, guid: 8b89fdb0c71dd438b9b7b0ef242463bc,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 98444798}
   m_SourcePrefab: {fileID: 100100000, guid: 8b89fdb0c71dd438b9b7b0ef242463bc, type: 3}
 --- !u!4 &164211095928399045 stripped
 Transform:

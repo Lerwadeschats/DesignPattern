@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3684626878333791114}
   - component: {fileID: 2609519502357274209}
+  - component: {fileID: 5843631384428948265}
   m_Layer: 6
   m_Name: HitBox
   m_TagString: Untagged
@@ -55,6 +56,19 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &5843631384428948265
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 126719504334403983}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cfc64a0c0e0619843b57b857ac5cf9b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _stats: {fileID: 323548754861459345}
 --- !u!1 &1105718103604369012
 GameObject:
   m_ObjectHideFlags: 0
@@ -102,7 +116,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Actions: {fileID: -944628639613478452, guid: 1d6993ecd4729416c9093616829d1212,
     type: 3}
-  m_NotificationBehavior: 0
+  m_NotificationBehavior: 2
   m_UIInputModule: {fileID: 0}
   m_DeviceLostEvent:
     m_PersistentCalls:
@@ -113,7 +127,27 @@ MonoBehaviour:
   m_ControlsChangedEvent:
     m_PersistentCalls:
       m_Calls: []
-  m_ActionEvents: []
+  m_ActionEvents:
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: f3dcfa54-f68d-4912-96a4-5b1a50e7f77e
+    m_ActionName: 'Game/Move[/Keyboard/w,/Keyboard/s,/Keyboard/a,/Keyboard/d,/Keyboard/upArrow,/Keyboard/downArrow,/Keyboard/leftArrow,/Keyboard/rightArrow]'
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 8161928024066895407}
+        m_TargetAssemblyTypeName: CharacterAttack, Assembly-CSharp
+        m_MethodName: Attack
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 69eb578d-11bf-46aa-a801-c59a74ef85eb
+    m_ActionName: 'Game/Attack[/Keyboard/space]'
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Game
@@ -132,6 +166,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _movements: {fileID: 3242414770405952738}
+  _attack: {fileID: 8161928024066895407}
 --- !u!1 &1558698249687060746
 GameObject:
   m_ObjectHideFlags: 0
@@ -233,6 +268,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4907740914890380782}
+  - component: {fileID: 8161928024066895407}
   m_Layer: 0
   m_Name: Actions
   m_TagString: Untagged
@@ -255,6 +291,35 @@ Transform:
   m_Children: []
   m_Father: {fileID: 2221839628788110084}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8161928024066895407
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5955739093765788549}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 136f3164a78d51943a7ff702b33bfbaf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _sword: {fileID: 7475226542098784770}
+  _stats: {fileID: 323548754861459345}
+  OnAttackEffect:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 6521031010801530517}
+        m_TargetAssemblyTypeName: PlayerAnimation, Assembly-CSharp
+        m_MethodName: AttackAnimation
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &6331558144665418028
 GameObject:
   m_ObjectHideFlags: 0
@@ -357,6 +422,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _playerStats: {fileID: 323548754861459345}
+  _rotationSpeed: 1
 --- !u!1 &6809413767842190970
 GameObject:
   m_ObjectHideFlags: 0
@@ -405,6 +471,22 @@ MonoBehaviour:
   _maxHealth: 100
   _currentHealth: 100
   _speed: 100
+  _attackCooldown: 1
+  OnHurtAnimation:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 6521031010801530517}
+        m_TargetAssemblyTypeName: PlayerAnimation, Assembly-CSharp
+        m_MethodName: HurtAnimation
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1001 &4809541577718529553
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -468,6 +550,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: sword_1handed
       objectReference: {fileID: 0}
+    - target: {fileID: 2667180439516273683, guid: 0e19eabe9837eae499912a22ea54f826,
+        type: 3}
+      propertyPath: _stats
+      value: 
+      objectReference: {fileID: 323548754861459345}
+    - target: {fileID: 6204523556015261653, guid: 0e19eabe9837eae499912a22ea54f826,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6204523556015261653, guid: 0e19eabe9837eae499912a22ea54f826,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -479,6 +576,18 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 4809541577718529553}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &7475226542098784770 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2667180439516273683, guid: 0e19eabe9837eae499912a22ea54f826,
+    type: 3}
+  m_PrefabInstance: {fileID: 4809541577718529553}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c2bd204140cc10644ad4517cfb6fbbfc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &9170720254062063542
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -550,7 +659,11 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2244014083398086627, guid: d035779bf520f38499966b00a58bd75f,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6521031010801530517}
   m_SourcePrefab: {fileID: 100100000, guid: d035779bf520f38499966b00a58bd75f, type: 3}
 --- !u!4 &625343852832257305 stripped
 Transform:
@@ -558,6 +671,24 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 9170720254062063542}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &6944734866117476437 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2244014083398086627, guid: d035779bf520f38499966b00a58bd75f,
+    type: 3}
+  m_PrefabInstance: {fileID: 9170720254062063542}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &6521031010801530517
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6944734866117476437}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b0d3f0dc9aca614c810dc3c4d88a723, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &8019267730992289373 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1157100718060288491, guid: d035779bf520f38499966b00a58bd75f,
