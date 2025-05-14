@@ -9,6 +9,7 @@ public class HealthProxy : MonoBehaviour, IHealth
 
     public void OnTakeDamages(float value)
     {
+        
        _stats.TakeDamages(value);
     }
 }
