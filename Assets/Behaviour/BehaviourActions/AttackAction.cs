@@ -9,7 +9,7 @@ using Unity.Properties;
 public partial class AttackAction : Action
 {
     [SerializeReference] public BlackboardVariable<GameObject> Agent;
-    [SerializeReference] public BlackboardVariable<PlayerAttacks> Attacking;
+    [SerializeReference] public BlackboardVariable<CharacterAttack> Attacking;
 
     protected override Status OnStart()
     {
