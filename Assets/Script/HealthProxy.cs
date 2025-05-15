@@ -1,20 +1,21 @@
 using UnityEngine;
-public interface IHealth
+
+public class HealthProxy : MonoBehaviour
 {
-    void OnTakeDamages(float value);
-}
-public class HealthProxy : MonoBehaviour, IHealth
-{
-    [SerializeField] CharacterStats _stats;
+    [SerializeField] Health _health;
 
     public void OnTakeDamages(float value)
     {
-        
-       _stats.TakeDamages(value);
+        if(_health.TryGetComponent(out IDamageable damageable))
+        {
+            damageable.TakeDamage(value);
+        }
     }
-
-    public void OnHeal(float value)
+    public void OnHealDamages(float value)
     {
-        //heal
+        if (_health.TryGetComponent(out IHealable healable))
+        {
+            healable.TakeHeal(value);
+        }
     }
 }

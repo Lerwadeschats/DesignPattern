@@ -41,6 +41,7 @@ public class ItemPool : MonoBehaviour
         Item itemInList = GetItemInList(item, false);
         if (itemInList == null) return;
         itemInList.transform.position = position;
+        itemInList.SpawnItem();
         itemInList.gameObject.SetActive(true);
     }
 

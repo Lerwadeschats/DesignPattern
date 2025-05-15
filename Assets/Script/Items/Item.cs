@@ -10,20 +10,22 @@ public class Item : MonoBehaviour
     public Action<Item> OnDeactivate;
     private CancellationTokenSource _cts;
 
-    
+    private void OnEnable()
+    {
+        _cts = new CancellationTokenSource();
+    }
 
     public virtual void Pick(Collider collider)
     {
         _cts.Cancel();
         OnDeactivate.Invoke(this);
-        gameObject.SetActive(false);
+        
 
     }
 
 
     public void SpawnItem()
     {
-        gameObject.SetActive(false);
         _cts = new CancellationTokenSource();
         Lifetime();
     }
@@ -35,7 +37,7 @@ public class Item : MonoBehaviour
     async Task Lifetime()
     {
         await Awaitable.WaitForSecondsAsync(_lifetimeDuration, _cts.Token);
-        gameObject.SetActive(false);
+        OnDeactivate.Invoke(this);
 
     }
 }

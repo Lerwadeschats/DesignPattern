@@ -31,6 +31,7 @@ public class Sword : MonoBehaviour
         Debug.Log("OnCollision");
         HealthProxy healthComponent = other.GetComponent<HealthProxy>();
         if (healthComponent == null) return;
+        print(healthComponent.name);
         healthComponent.OnTakeDamages(_stats.Damage);
         OnHit?.Invoke();
     }

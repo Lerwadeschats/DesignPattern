@@ -46,15 +46,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _availableContent:
   - item: {fileID: 5828768457790554535, guid: 70d975b7727cf284787eefcecebacb8f, type: 3}
-    minAmount: 1
+    minAmount: 0
     maxAmount: 2
-    chance: 1
+    chance: 0.2
   - item: {fileID: 5828768457790554535, guid: c510571c1d8177446aa8a013c50a27a9, type: 3}
-    minAmount: 3
+    minAmount: 0
     maxAmount: 5
-    chance: 1
+    chance: 0.9
   - item: {fileID: 5828768457790554535, guid: 46d8b1d9274bddf448119f3cacf363ef, type: 3}
-    minAmount: 1
+    minAmount: 0
     maxAmount: 1
-    chance: 1
-  _currentContent: []
+    chance: 0.5

@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 3684626878333791114}
   - component: {fileID: 2609519502357274209}
   - component: {fileID: 5843631384428948265}
+  - component: {fileID: 1411911803304167104}
+  - component: {fileID: 1213271477445786644}
   m_Layer: 6
   m_Name: HitBox
   m_TagString: Untagged
@@ -66,6 +68,32 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: cfc64a0c0e0619843b57b857ac5cf9b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _health: {fileID: 5547061274939546774}
+--- !u!114 &1411911803304167104
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 126719504334403983}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f75a8a7a4a122d140b6c3adfcaae3c07, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _stats: {fileID: 323548754861459345}
+--- !u!114 &1213271477445786644
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 126719504334403983}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e2b17d6c5b92714d812ea46df9559dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _stats: {fileID: 323548754861459345}
@@ -344,7 +372,7 @@ MonoBehaviour:
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 0
-  m_FillAmount: 0
+  m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
@@ -570,6 +598,7 @@ GameObject:
   - component: {fileID: 2755339349131118951}
   - component: {fileID: 9115170152858762924}
   - component: {fileID: 3242414770405952738}
+  - component: {fileID: 5547061274939546774}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -663,6 +692,22 @@ MonoBehaviour:
   _playerStats: {fileID: 323548754861459345}
   _anim: {fileID: 6521031010801530517}
   _rotationSpeed: 1
+--- !u!114 &5547061274939546774
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6331558144665418028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d69bf00f34a972e44a626a6bcfacd80d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _maxHealth: 100
+  _currentHealth: 100
+  _healthBar: {fileID: 8573519730712725874}
+  _animator: {fileID: 4017012815927045721}
 --- !u!1 &6809413767842190970
 GameObject:
   m_ObjectHideFlags: 0
@@ -708,11 +753,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _damage: 5
-  _maxHealth: 100
-  _currentHealth: 100
   _speed: 100
   _attackCooldown: 1
-  _anim: {fileID: 6521031010801530517}
 --- !u!1 &7374176719230361878
 GameObject:
   m_ObjectHideFlags: 0
@@ -759,6 +801,8 @@ GameObject:
   m_Component:
   - component: {fileID: 6413710319335878298}
   - component: {fileID: 4134904182680928177}
+  - component: {fileID: 1861986405975719129}
+  - component: {fileID: 8573519730712725874}
   m_Layer: 5
   m_Name: Slider
   m_TagString: Untagged
@@ -834,10 +878,34 @@ MonoBehaviour:
   m_MinValue: 0
   m_MaxValue: 1
   m_WholeNumbers: 0
-  m_Value: 0
+  m_Value: 1
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &1861986405975719129
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8859678014864504600}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 138d132faf6810e498951f6c4f4d9f89, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &8573519730712725874
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8859678014864504600}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf6049be574ac274fbcca6a211f4da92, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &4809541577718529553
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1019,6 +1087,12 @@ PrefabInstance:
 --- !u!4 &625343852832257305 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8640538035317054127, guid: d035779bf520f38499966b00a58bd75f,
+    type: 3}
+  m_PrefabInstance: {fileID: 9170720254062063542}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &4017012815927045721 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 5259002207622955503, guid: d035779bf520f38499966b00a58bd75f,
     type: 3}
   m_PrefabInstance: {fileID: 9170720254062063542}
   m_PrefabAsset: {fileID: 0}
