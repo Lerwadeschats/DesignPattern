@@ -6,7 +6,7 @@ public class MoneyItem : Item
     public override void Pick(Collider collider)
     {
         MoneyProxy proxy = collider.GetComponent<MoneyProxy>();
-        if (proxy != null) return;
+        if (proxy == null) return;
         proxy.OnGetMoney(value);
         base.Pick(collider);
     }

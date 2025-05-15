@@ -6,9 +6,9 @@ public class Heal : Item
     public override void Pick(Collider collider)
     {
         base.Pick(collider);
-        HealthProxy healthComponent = collider.GetComponent<HealthProxy>();
-        if (healthComponent == null) return;
-        //Heal
+        HealthProxy proxy = collider.GetComponent<HealthProxy>();
+        if (proxy == null) return;
+        proxy.OnHealDamages(amount);
         base.Pick(collider);
     }
 }

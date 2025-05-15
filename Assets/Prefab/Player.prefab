@@ -755,6 +755,7 @@ MonoBehaviour:
   _damage: 5
   _speed: 100
   _attackCooldown: 1
+  _money: 0
 --- !u!1 &7374176719230361878
 GameObject:
   m_ObjectHideFlags: 0
@@ -977,7 +978,7 @@ PrefabInstance:
     - target: {fileID: 6204523556015261653, guid: 0e19eabe9837eae499912a22ea54f826,
         type: 3}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6204523556015261653, guid: 0e19eabe9837eae499912a22ea54f826,
         type: 3}

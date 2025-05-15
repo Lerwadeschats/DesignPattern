@@ -7,7 +7,7 @@ public class BuffItem : Item
     public override void Pick(Collider collider)
     {
         BuffProxy proxy = collider.GetComponent<BuffProxy>();
-        if (proxy != null) return;
+        if (proxy == null) return;
         proxy.OnAttackBuffed(factor, duration);
         base.Pick(collider);
     }

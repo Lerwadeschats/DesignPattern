@@ -29,7 +29,7 @@ public class Drop : MonoBehaviour
     }
     public void CreateNewDrop()
     {
-        int contentCount = UnityEngine.Random.Range(0, _availableContent.Count);
+        int contentCount = UnityEngine.Random.Range(0, _availableContent.Count + 1);
         for (int i = 0; i < contentCount; i++)
         {
             DropContent content = GetContentByChance();

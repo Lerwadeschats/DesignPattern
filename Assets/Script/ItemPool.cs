@@ -36,6 +36,16 @@ public class ItemPool : MonoBehaviour
         }
     }
 
+    private void OnDisable()
+    {
+        foreach (Item item in items)
+        {
+            item.OnDeactivate -= DeactivateItem;
+        }
+    }
+
+
+
     public void ActivateItem(Item item, Vector3 position)
     {
         Item itemInList = GetItemInList(item, false);

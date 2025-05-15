@@ -15,10 +15,12 @@ public class Item : MonoBehaviour
         _cts = new CancellationTokenSource();
     }
 
+    
+
     public virtual void Pick(Collider collider)
     {
         _cts.Cancel();
-        OnDeactivate.Invoke(this);
+        OnDeactivate?.Invoke(this);
         
 
     }

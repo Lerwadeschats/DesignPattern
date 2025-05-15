@@ -7,12 +7,11 @@ using UnityEngine.Events;
 public class CharacterStats : MonoBehaviour
 {
     [SerializeField] private float _damage = 5f;
-   
 
     [SerializeField] private float _speed = 100f;
     [SerializeField] private float _attackCooldown = 1f;
 
-    float _money = 0;
+    public float _money = 0;
 
     public float Damage { get => _damage; set => _damage = value; }
 
@@ -26,13 +25,10 @@ public class CharacterStats : MonoBehaviour
 
     async Task Buff(float factor, float duration)
     {
-        float oldAttackValue = _damage;
         _damage *= factor;
         await Awaitable.WaitForSecondsAsync(duration);
-        _damage = oldAttackValue;
+        _damage /= factor;
     }
-
-    
 
     public void GetMoney(int amount)
     {
