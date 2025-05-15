@@ -19,6 +19,36 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 5094957635961293464, guid: 64f9da60a9b3823418f5bfa1ed1902b9,
         type: 2}
+    - target: {fileID: 5621713598154464211, guid: b8e63e1fcdad9425f9577e9775d324fc,
+        type: 3}
+      propertyPath: 'managedReferences[3984077436802302538]'
+      value: 'Unity.Behavior Unity.Behavior.BlackboardVariable`1[[Sword, Assembly-CSharp]]'
+      objectReference: {fileID: 0}
+    - target: {fileID: 5621713598154464211, guid: b8e63e1fcdad9425f9577e9775d324fc,
+        type: 3}
+      propertyPath: managedReferences[3984077436802302538].Name
+      value: Sword
+      objectReference: {fileID: 0}
+    - target: {fileID: 5621713598154464211, guid: b8e63e1fcdad9425f9577e9775d324fc,
+        type: 3}
+      propertyPath: managedReferences[3984077436802302538].m_Value
+      value: 
+      objectReference: {fileID: 4616156284583418097}
+    - target: {fileID: 5621713598154464211, guid: b8e63e1fcdad9425f9577e9775d324fc,
+        type: 3}
+      propertyPath: 'm_BlackboardVariableOverridesList.Array.data[4]'
+      value: 3984077436802302538
+      objectReference: {fileID: 0}
+    - target: {fileID: 5621713598154464211, guid: b8e63e1fcdad9425f9577e9775d324fc,
+        type: 3}
+      propertyPath: managedReferences[3984077436802302538].GUID.m_Value0
+      value: 15113313941192334485
+      objectReference: {fileID: 0}
+    - target: {fileID: 5621713598154464211, guid: b8e63e1fcdad9425f9577e9775d324fc,
+        type: 3}
+      propertyPath: managedReferences[3984077436802302538].GUID.m_Value1
+      value: 11421364658135024767
+      objectReference: {fileID: 0}
     - target: {fileID: 5943897753975625083, guid: b8e63e1fcdad9425f9577e9775d324fc,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -74,3 +104,15 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b8e63e1fcdad9425f9577e9775d324fc, type: 3}
+--- !u!114 &4616156284583418097 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3104156836562347133, guid: b8e63e1fcdad9425f9577e9775d324fc,
+    type: 3}
+  m_PrefabInstance: {fileID: 7717990658307144844}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c2bd204140cc10644ad4517cfb6fbbfc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

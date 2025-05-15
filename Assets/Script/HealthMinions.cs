@@ -33,8 +33,6 @@ public class HealthMinions : Health, IDamageable
     {
         _animator.SetBool("Hit", true);
         CurrentHealth -= amount;
-        yield return new WaitForSeconds(1);
-        _animator.SetBool("Hit", false);
         if (CurrentHealth < 0)
         {
             Death();
