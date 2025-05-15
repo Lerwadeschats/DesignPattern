@@ -238,6 +238,11 @@ PrefabInstance:
       propertyPath: OnDeathAnimation.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 1487324600872679876, guid: 8b89fdb0c71dd438b9b7b0ef242463bc,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1655543727597910637, guid: 8b89fdb0c71dd438b9b7b0ef242463bc,
         type: 3}
       propertyPath: m_Sources.Array.data[0].sourceTransform
@@ -346,7 +351,7 @@ PrefabInstance:
     - target: {fileID: 9115170152858762924, guid: 8b89fdb0c71dd438b9b7b0ef242463bc,
         type: 3}
       propertyPath: m_IsKinematic
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 0}
@@ -354,6 +359,7 @@ PrefabInstance:
     - {fileID: 0}
     - {fileID: 3170105827529232782, guid: 8b89fdb0c71dd438b9b7b0ef242463bc, type: 3}
     - {fileID: 5832434688298149036, guid: 8b89fdb0c71dd438b9b7b0ef242463bc, type: 3}
+    - {fileID: 3242414770405952738, guid: 8b89fdb0c71dd438b9b7b0ef242463bc, type: 3}
     m_RemovedGameObjects:
     - {fileID: 6944734866117476437, guid: 8b89fdb0c71dd438b9b7b0ef242463bc, type: 3}
     m_AddedGameObjects:
@@ -389,22 +395,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f0038c16c34866b4f9e25c9c0dc0f7e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Graph: {fileID: -5507977575456885798, guid: f0fc8352cca02734891dd065b6ccbc6f,
-    type: 2}
+  m_Graph: {fileID: 3915779413850848330, guid: f0fc8352cca02734891dd065b6ccbc6f, type: 2}
   m_BlackboardVariableOverridesList:
-  - rid: 3984077387806802150
-  - rid: 3984077387806802292
-  - rid: 3984077387806802293
-  - rid: 3984077408497828275
-  - rid: 3984077408497828276
-  - rid: 3984077414500925870
-  - rid: 3984077414500926200
+  - rid: 2089878381679345803
+  - rid: 2089878381679345804
+  - rid: 2089878381679345805
+  - rid: 2089878381679345806
   m_IsInitialised: 0
   m_IsStarted: 0
   references:
     version: 2
     RefIds:
-    - rid: 3984077387806802150
+    - rid: 2089878381679345803
       type: {class: 'BlackboardVariable`1[[UnityEngine.GameObject, UnityEngine.CoreModule]]',
         ns: Unity.Behavior, asm: Unity.Behavior}
       data:
@@ -413,43 +415,7 @@ MonoBehaviour:
           m_Value1: 0
         Name: Self
         m_Value: {fileID: 1979136645898436435}
-    - rid: 3984077387806802292
-      type: {class: 'BlackboardVariable`1[[UnityEngine.GameObject, UnityEngine.CoreModule]]',
-        ns: Unity.Behavior, asm: Unity.Behavior}
-      data:
-        GUID:
-          m_Value0: 5201916440835181916
-          m_Value1: 5346497177002901972
-        Name: Player
-        m_Value: {fileID: 0}
-    - rid: 3984077387806802293
-      type: {class: 'BlackboardVariable`1[[System.Single, mscorlib]]', ns: Unity.Behavior,
-        asm: Unity.Behavior}
-      data:
-        GUID:
-          m_Value0: 18072362445194471999
-          m_Value1: 8622523058441841076
-        Name: DetectDistance
-        m_Value: 5
-    - rid: 3984077408497828275
-      type: {class: 'BlackboardVariable`1[[UnityEngine.Animator, UnityEngine.AnimationModule]]',
-        ns: Unity.Behavior, asm: Unity.Behavior}
-      data:
-        GUID:
-          m_Value0: 6141813341822212076
-          m_Value1: 1519774518961529544
-        Name: Animator
-        m_Value: {fileID: 5389989245478962096}
-    - rid: 3984077408497828276
-      type: {class: 'BlackboardVariable`1[[System.Single, mscorlib]]', ns: Unity.Behavior,
-        asm: Unity.Behavior}
-      data:
-        GUID:
-          m_Value0: 14350424007254630423
-          m_Value1: 11568278571810370190
-        Name: PostAttack
-        m_Value: 2
-    - rid: 3984077414500925870
+    - rid: 2089878381679345804
       type: {class: 'BlackboardVariable`1[[PlayerDetector, Assembly-CSharp]]', ns: Unity.Behavior,
         asm: Unity.Behavior}
       data:
@@ -458,7 +424,7 @@ MonoBehaviour:
           m_Value1: 3058798300304612621
         Name: New Player Detector
         m_Value: {fileID: 5941091427814177478}
-    - rid: 3984077414500926200
+    - rid: 2089878381679345805
       type: {class: 'BlackboardVariable`1[[LineOfSight, Assembly-CSharp]]', ns: Unity.Behavior,
         asm: Unity.Behavior}
       data:
@@ -467,6 +433,15 @@ MonoBehaviour:
           m_Value1: 6409081501535146013
         Name: New Line Of Sight
         m_Value: {fileID: 6326274771318520229}
+    - rid: 2089878381679345806
+      type: {class: 'BlackboardVariable`1[[UnityEngine.Animator, UnityEngine.AnimationModule]]',
+        ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        GUID:
+          m_Value0: 6141813341822212076
+          m_Value1: 1519774518961529544
+        Name: Animator
+        m_Value: {fileID: 5389989245478962096}
 --- !u!4 &3035610588323118745 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7388682276387780838, guid: 8b89fdb0c71dd438b9b7b0ef242463bc,

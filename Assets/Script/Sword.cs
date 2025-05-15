@@ -13,7 +13,7 @@ public class Sword : MonoBehaviour
 
     public void Activate()
     {
-        _collider.isTrigger = true;
+        _collider.enabled = true;
         //Animation
         Debug.Log("Activate");
     }
@@ -22,7 +22,7 @@ public class Sword : MonoBehaviour
 
     public void Deactivate()
     {
-        _collider.isTrigger = false;
+        _collider.enabled = false;
         Debug.Log("Deactivate");
     }
 
