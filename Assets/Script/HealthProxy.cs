@@ -12,4 +12,9 @@ public class HealthProxy : MonoBehaviour, IHealth
         
        _stats.TakeDamages(value);
     }
+
+    public void OnHeal(float value)
+    {
+        //heal
+    }
 }
