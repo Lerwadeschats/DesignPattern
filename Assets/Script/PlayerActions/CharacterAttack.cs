@@ -10,7 +10,7 @@ public class CharacterAttack : MonoBehaviour
     [SerializeField] Sword _sword;
     [SerializeField] CharacterStats _stats;
 
-    [SerializeField] UnityEvent OnAttackEffect;
+    [SerializeField] CharacterAnimation _anim;
 
 
     private CancellationTokenSource _cts;
@@ -26,7 +26,7 @@ public class CharacterAttack : MonoBehaviour
         if (_canAttack)
         {
             _sword.Activate();
-            OnAttackEffect?.Invoke();
+            _anim.AttackAnimation();
             AttackCooldown(_cts.Token);
         }
         
@@ -46,7 +46,5 @@ public class CharacterAttack : MonoBehaviour
     void OnHit()
     {
         _sword.Deactivate();
-        //_cts.Cancel();
-        //_canAttack = true;
     }
 }

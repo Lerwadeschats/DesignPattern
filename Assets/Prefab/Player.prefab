@@ -344,7 +344,7 @@ MonoBehaviour:
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 0
-  m_FillAmount: 1
+  m_FillAmount: 0
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
@@ -421,7 +421,6 @@ GameObject:
   - component: {fileID: 7330245839887757859}
   - component: {fileID: 6623500216579095343}
   - component: {fileID: 2159618924767064590}
-  - component: {fileID: 8494667945193541665}
   m_Layer: 5
   m_Name: HealthBar
   m_TagString: Untagged
@@ -512,18 +511,6 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
---- !u!114 &8494667945193541665
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5255982408754631542}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 138d132faf6810e498951f6c4f4d9f89, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &5955739093765788549
 GameObject:
   m_ObjectHideFlags: 0
@@ -570,21 +557,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _sword: {fileID: 7475226542098784770}
   _stats: {fileID: 323548754861459345}
-  OnAttackEffect:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 6521031010801530517}
-        m_TargetAssemblyTypeName: PlayerAnimation, Assembly-CSharp
-        m_MethodName: AttackAnimation
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+  _anim: {fileID: 6521031010801530517}
 --- !u!1 &6331558144665418028
 GameObject:
   m_ObjectHideFlags: 0
@@ -688,6 +661,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _playerStats: {fileID: 323548754861459345}
+  _anim: {fileID: 6521031010801530517}
   _rotationSpeed: 1
 --- !u!1 &6809413767842190970
 GameObject:
@@ -738,25 +712,7 @@ MonoBehaviour:
   _currentHealth: 100
   _speed: 100
   _attackCooldown: 1
-  _healthBar: {fileID: 2308816353280424322}
-  OnHurtAnimation:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 6521031010801530517}
-        m_TargetAssemblyTypeName: PlayerAnimation, Assembly-CSharp
-        m_MethodName: HurtAnimation
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  OnDeathAnimation:
-    m_PersistentCalls:
-      m_Calls: []
+  _anim: {fileID: 6521031010801530517}
 --- !u!1 &7374176719230361878
 GameObject:
   m_ObjectHideFlags: 0
@@ -803,7 +759,6 @@ GameObject:
   m_Component:
   - component: {fileID: 6413710319335878298}
   - component: {fileID: 4134904182680928177}
-  - component: {fileID: 2308816353280424322}
   m_Layer: 5
   m_Name: Slider
   m_TagString: Untagged
@@ -879,22 +834,10 @@ MonoBehaviour:
   m_MinValue: 0
   m_MaxValue: 1
   m_WholeNumbers: 0
-  m_Value: 1
+  m_Value: 0
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &2308816353280424322
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8859678014864504600}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bf6049be574ac274fbcca6a211f4da92, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &4809541577718529553
 PrefabInstance:
   m_ObjectHideFlags: 0

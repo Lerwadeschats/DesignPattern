@@ -188,16 +188,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 217569578514926877, guid: 8b89fdb0c71dd438b9b7b0ef242463bc,
+    - target: {fileID: 323548754861459345, guid: 8b89fdb0c71dd438b9b7b0ef242463bc,
         type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 217569578514926877, guid: 8b89fdb0c71dd438b9b7b0ef242463bc,
-        type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
+      propertyPath: _anim
+      value: 
+      objectReference: {fileID: 5987790474954830180}
     - target: {fileID: 323548754861459345, guid: 8b89fdb0c71dd438b9b7b0ef242463bc,
         type: 3}
       propertyPath: OnDeathAnimation.m_PersistentCalls.m_Calls.Array.size
@@ -247,6 +242,11 @@ PrefabInstance:
         type: 3}
       propertyPath: OnDeathAnimation.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 1487324600872679876, guid: 8b89fdb0c71dd438b9b7b0ef242463bc,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1655543727597910637, guid: 8b89fdb0c71dd438b9b7b0ef242463bc,
         type: 3}
@@ -308,16 +308,6 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 2976209227845342743, guid: 8b89fdb0c71dd438b9b7b0ef242463bc,
-        type: 3}
-      propertyPath: m_FillAmount
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4134904182680928177, guid: 8b89fdb0c71dd438b9b7b0ef242463bc,
-        type: 3}
-      propertyPath: m_Value
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 4970638748679642028, guid: 8b89fdb0c71dd438b9b7b0ef242463bc,
         type: 3}
       propertyPath: m_LocalRotation.w
@@ -345,6 +335,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8161928024066895407, guid: 8b89fdb0c71dd438b9b7b0ef242463bc,
         type: 3}
+      propertyPath: _anim
+      value: 
+      objectReference: {fileID: 5987790474954830180}
+    - target: {fileID: 8161928024066895407, guid: 8b89fdb0c71dd438b9b7b0ef242463bc,
+        type: 3}
       propertyPath: OnAttackEffect.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 5987790474954830180}
@@ -366,7 +361,7 @@ PrefabInstance:
     - target: {fileID: 9115170152858762924, guid: 8b89fdb0c71dd438b9b7b0ef242463bc,
         type: 3}
       propertyPath: m_IsKinematic
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 0}
@@ -374,6 +369,7 @@ PrefabInstance:
     - {fileID: 0}
     - {fileID: 3170105827529232782, guid: 8b89fdb0c71dd438b9b7b0ef242463bc, type: 3}
     - {fileID: 5832434688298149036, guid: 8b89fdb0c71dd438b9b7b0ef242463bc, type: 3}
+    - {fileID: 3242414770405952738, guid: 8b89fdb0c71dd438b9b7b0ef242463bc, type: 3}
     m_RemovedGameObjects:
     - {fileID: 6944734866117476437, guid: 8b89fdb0c71dd438b9b7b0ef242463bc, type: 3}
     m_AddedGameObjects:
@@ -390,10 +386,6 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 5621713598154464211}
-    - targetCorrespondingSourceObject: {fileID: 8859678014864504600, guid: 8b89fdb0c71dd438b9b7b0ef242463bc,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 4132402868597712419}
   m_SourcePrefab: {fileID: 100100000, guid: 8b89fdb0c71dd438b9b7b0ef242463bc, type: 3}
 --- !u!1 &1979136645898436435 stripped
 GameObject:
@@ -413,21 +405,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f0038c16c34866b4f9e25c9c0dc0f7e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Graph: {fileID: -2856964652069019552, guid: f0fc8352cca02734891dd065b6ccbc6f,
-    type: 2}
+  m_Graph: {fileID: 3915779413850848330, guid: f0fc8352cca02734891dd065b6ccbc6f, type: 2}
   m_BlackboardVariableOverridesList:
-  - rid: 3984077420626444427
-  - rid: 3984077420626444428
-  - rid: 3984077420626444429
-  - rid: 3984077420626444430
-  - rid: 3984077420626444431
-  - rid: 3984077420626444663
+  - rid: 2089878381679345803
+  - rid: 2089878381679345804
+  - rid: 2089878381679345805
+  - rid: 2089878381679345806
   m_IsInitialised: 0
   m_IsStarted: 0
   references:
     version: 2
     RefIds:
-    - rid: 3984077420626444427
+    - rid: 2089878381679345803
       type: {class: 'BlackboardVariable`1[[UnityEngine.GameObject, UnityEngine.CoreModule]]',
         ns: Unity.Behavior, asm: Unity.Behavior}
       data:
@@ -436,16 +425,7 @@ MonoBehaviour:
           m_Value1: 0
         Name: Self
         m_Value: {fileID: 1979136645898436435}
-    - rid: 3984077420626444428
-      type: {class: 'BlackboardVariable`1[[LineOfSight, Assembly-CSharp]]', ns: Unity.Behavior,
-        asm: Unity.Behavior}
-      data:
-        GUID:
-          m_Value0: 436736000101788318
-          m_Value1: 6409081501535146013
-        Name: New Line Of Sight
-        m_Value: {fileID: 6326274771318520229}
-    - rid: 3984077420626444429
+    - rid: 2089878381679345804
       type: {class: 'BlackboardVariable`1[[PlayerDetector, Assembly-CSharp]]', ns: Unity.Behavior,
         asm: Unity.Behavior}
       data:
@@ -454,16 +434,16 @@ MonoBehaviour:
           m_Value1: 3058798300304612621
         Name: New Player Detector
         m_Value: {fileID: 5941091427814177478}
-    - rid: 3984077420626444430
-      type: {class: 'BlackboardVariable`1[[System.Single, mscorlib]]', ns: Unity.Behavior,
+    - rid: 2089878381679345805
+      type: {class: 'BlackboardVariable`1[[LineOfSight, Assembly-CSharp]]', ns: Unity.Behavior,
         asm: Unity.Behavior}
       data:
         GUID:
-          m_Value0: 14350424007254630423
-          m_Value1: 11568278571810370190
-        Name: PostAttack
-        m_Value: 1
-    - rid: 3984077420626444431
+          m_Value0: 436736000101788318
+          m_Value1: 6409081501535146013
+        Name: New Line Of Sight
+        m_Value: {fileID: 6326274771318520229}
+    - rid: 2089878381679345806
       type: {class: 'BlackboardVariable`1[[UnityEngine.Animator, UnityEngine.AnimationModule]]',
         ns: Unity.Behavior, asm: Unity.Behavior}
       data:
@@ -472,51 +452,12 @@ MonoBehaviour:
           m_Value1: 1519774518961529544
         Name: Animator
         m_Value: {fileID: 5389989245478962096}
-    - rid: 3984077420626444663
-      type: {class: 'BlackboardVariable`1[[Sword, Assembly-CSharp]]', ns: Unity.Behavior,
-        asm: Unity.Behavior}
-      data:
-        GUID:
-          m_Value0: 8420756702112154821
-          m_Value1: 7609318587863251693
-        Name: Sword
-        m_Value: {fileID: 3104156836562347133}
 --- !u!4 &3035610588323118745 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7388682276387780838, guid: 8b89fdb0c71dd438b9b7b0ef242463bc,
     type: 3}
   m_PrefabInstance: {fileID: 5524079308583765631}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &3104156836562347133 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 7475226542098784770, guid: 8b89fdb0c71dd438b9b7b0ef242463bc,
-    type: 3}
-  m_PrefabInstance: {fileID: 5524079308583765631}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c2bd204140cc10644ad4517cfb6fbbfc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!1 &3916617561452491111 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8859678014864504600, guid: 8b89fdb0c71dd438b9b7b0ef242463bc,
-    type: 3}
-  m_PrefabInstance: {fileID: 5524079308583765631}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &4132402868597712419
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3916617561452491111}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bf6049be574ac274fbcca6a211f4da92, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &5943897753975625083 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2221839628788110084, guid: 8b89fdb0c71dd438b9b7b0ef242463bc,

@@ -7,6 +7,7 @@ public class CharacterMovement : MonoBehaviour
 {
 
     [SerializeField] CharacterStats _playerStats;
+    [SerializeField] CharacterAnimation _anim;
 
     [SerializeField] float _rotationSpeed = 1f;
 
@@ -30,6 +31,7 @@ public class CharacterMovement : MonoBehaviour
     {
 
         _navMeshAgent.speed = _playerStats.Speed;
+        _anim.WalkAnimation(_direction.magnitude);
         Vector3 newDirection = _direction;
         if (_direction != Vector3.zero)
         {

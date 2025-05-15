@@ -11,9 +11,7 @@ public class CharacterStats : MonoBehaviour
     [SerializeField] private float _attackCooldown = 1f;
     [SerializeField] private HealthUI _healthBar;
 
-
-    [SerializeField] UnityEvent OnHurtAnimation;
-    [SerializeField] UnityEvent OnDeathAnimation;
+    [SerializeField] CharacterAnimation _anim;
 
     public float Damage { get => _damage; set => _damage = value; }
     public float MaxHealth { get => _maxHealth; set => _maxHealth = value; }
@@ -44,12 +42,12 @@ public class CharacterStats : MonoBehaviour
     public void TakeDamages(float value)
     {
         UpdateHealth(-value);
-        OnHurtAnimation?.Invoke();
+        _anim.HurtAnimation();
     }
 
     public void Death()
     {
-        OnDeathAnimation?.Invoke();
+       _anim.DeathAnimation();
     }
 
 }

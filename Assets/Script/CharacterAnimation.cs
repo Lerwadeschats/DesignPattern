@@ -24,4 +24,9 @@ public class CharacterAnimation : MonoBehaviour
     {
         _animator.SetTrigger("Die");
     }
+
+    public void WalkAnimation(float value)
+    {
+        _animator.SetFloat("WalkSpeed", value);
+    }
 }
