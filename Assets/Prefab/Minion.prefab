@@ -190,6 +190,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 323548754861459345, guid: 8b89fdb0c71dd438b9b7b0ef242463bc,
         type: 3}
+      propertyPath: _anim
+      value: 
+      objectReference: {fileID: 5987790474954830180}
+    - target: {fileID: 323548754861459345, guid: 8b89fdb0c71dd438b9b7b0ef242463bc,
+        type: 3}
       propertyPath: OnDeathAnimation.m_PersistentCalls.m_Calls.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -328,6 +333,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Minion
       objectReference: {fileID: 0}
+    - target: {fileID: 8161928024066895407, guid: 8b89fdb0c71dd438b9b7b0ef242463bc,
+        type: 3}
+      propertyPath: _anim
+      value: 
+      objectReference: {fileID: 5987790474954830180}
     - target: {fileID: 8161928024066895407, guid: 8b89fdb0c71dd438b9b7b0ef242463bc,
         type: 3}
       propertyPath: OnAttackEffect.m_PersistentCalls.m_Calls.Array.data[0].m_Target
