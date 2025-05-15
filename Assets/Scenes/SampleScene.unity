@@ -6351,6 +6351,7 @@ MonoBehaviour:
   _maxHealth: 0
   _currentHealth: 0
   _healthBar: {fileID: 0}
+  _navMeshSurface: {fileID: 1284204141}
 --- !u!1001 &461044118
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13945,6 +13946,7 @@ MonoBehaviour:
   _maxHealth: 0
   _currentHealth: 0
   _healthBar: {fileID: 0}
+  _navMeshSurface: {fileID: 1284204141}
 --- !u!1001 &932620434
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14137,6 +14139,7 @@ MonoBehaviour:
   _maxHealth: 0
   _currentHealth: 0
   _healthBar: {fileID: 0}
+  _navMeshSurface: {fileID: 1284204141}
 --- !u!4 &944098807 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 5d68d1e38da0311479c8004fc150be37,
@@ -14335,6 +14338,7 @@ MonoBehaviour:
   _maxHealth: 0
   _currentHealth: 0
   _healthBar: {fileID: 0}
+  _navMeshSurface: {fileID: 1284204141}
 --- !u!1001 &956636976
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15196,6 +15200,7 @@ MonoBehaviour:
   _maxHealth: 0
   _currentHealth: 0
   _healthBar: {fileID: 0}
+  _navMeshSurface: {fileID: 1284204141}
 --- !u!4 &1001573781 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 5d68d1e38da0311479c8004fc150be37,
@@ -18526,6 +18531,7 @@ MonoBehaviour:
   _maxHealth: 0
   _currentHealth: 0
   _healthBar: {fileID: 0}
+  _navMeshSurface: {fileID: 1284204141}
 --- !u!1001 &1212188011
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19347,6 +19353,7 @@ MonoBehaviour:
   _maxHealth: 0
   _currentHealth: 0
   _healthBar: {fileID: 0}
+  _navMeshSurface: {fileID: 1284204141}
 --- !u!1001 &1267876929
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -22768,6 +22775,7 @@ MonoBehaviour:
   _maxHealth: 1
   _currentHealth: 2
   _healthBar: {fileID: 0}
+  _navMeshSurface: {fileID: 1284204141}
 --- !u!4 &1512228682 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 5d68d1e38da0311479c8004fc150be37,
@@ -23653,6 +23661,7 @@ MonoBehaviour:
   _maxHealth: 0
   _currentHealth: 0
   _healthBar: {fileID: 0}
+  _navMeshSurface: {fileID: 1284204141}
 --- !u!4 &1580355653 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 5d68d1e38da0311479c8004fc150be37,
@@ -25348,6 +25357,7 @@ MonoBehaviour:
   _maxHealth: 0
   _currentHealth: 0
   _healthBar: {fileID: 0}
+  _navMeshSurface: {fileID: 1284204141}
 --- !u!1001 &1737434015
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -26077,6 +26087,7 @@ MonoBehaviour:
   _maxHealth: 0
   _currentHealth: 0
   _healthBar: {fileID: 0}
+  _navMeshSurface: {fileID: 1284204141}
 --- !u!4 &1791588364 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 5d68d1e38da0311479c8004fc150be37,
@@ -27017,6 +27028,7 @@ MonoBehaviour:
   _maxHealth: 0
   _currentHealth: 0
   _healthBar: {fileID: 0}
+  _navMeshSurface: {fileID: 1284204141}
 --- !u!1001 &1896169012
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -28214,6 +28226,7 @@ MonoBehaviour:
   _maxHealth: 0
   _currentHealth: 0
   _healthBar: {fileID: 0}
+  _navMeshSurface: {fileID: 1284204141}
 --- !u!1001 &1959421441
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -28412,6 +28425,7 @@ MonoBehaviour:
   _maxHealth: 0
   _currentHealth: 0
   _healthBar: {fileID: 0}
+  _navMeshSurface: {fileID: 1284204141}
 --- !u!4 &1992930036 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 5d68d1e38da0311479c8004fc150be37,
@@ -29865,6 +29879,7 @@ MonoBehaviour:
   _maxHealth: 0
   _currentHealth: 0
   _healthBar: {fileID: 0}
+  _navMeshSurface: {fileID: 1284204141}
 --- !u!1001 &2066530861
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -30675,6 +30690,7 @@ MonoBehaviour:
   _maxHealth: 0
   _currentHealth: 0
   _healthBar: {fileID: 0}
+  _navMeshSurface: {fileID: 1284204141}
 --- !u!1001 &2119913516
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -30794,6 +30810,7 @@ MonoBehaviour:
   _maxHealth: 0
   _currentHealth: 0
   _healthBar: {fileID: 0}
+  _navMeshSurface: {fileID: 1284204141}
 --- !u!1001 &2135601709
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -31301,6 +31318,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_UseGravity
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115170152858762924, guid: 8b89fdb0c71dd438b9b7b0ef242463bc,
+        type: 3}
+      propertyPath: m_IsKinematic
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
