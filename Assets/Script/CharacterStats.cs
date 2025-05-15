@@ -1,3 +1,4 @@
+using Unity.Behavior;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -12,6 +13,7 @@ public class CharacterStats : MonoBehaviour
     [SerializeField] private HealthUI _healthBar;
 
     [SerializeField] CharacterAnimation _anim;
+    [SerializeField] BehaviorGraphAgent _behaviour;
 
     public float Damage { get => _damage; set => _damage = value; }
     public float MaxHealth { get => _maxHealth; set => _maxHealth = value; }
@@ -22,7 +24,7 @@ public class CharacterStats : MonoBehaviour
             {
                 value = _maxHealth;
             }
-            _healthBar.updateSlider(value);
+            _healthBar.updateSlider(value/MaxHealth);
             _currentHealth = value;
         } }
     public float Speed { get => _speed; set => _speed = value; }
@@ -30,10 +32,10 @@ public class CharacterStats : MonoBehaviour
 
     void UpdateHealth(float value)
     {
-        
-        _currentHealth += value;
-        Mathf.Clamp(_currentHealth, 0, _maxHealth);
-        if (_currentHealth == 0)
+
+        CurrentHealth += value;
+        Mathf.Clamp(CurrentHealth, 0, _maxHealth);
+        if (CurrentHealth == 0)
         {
             Death();
         }
@@ -47,7 +49,12 @@ public class CharacterStats : MonoBehaviour
 
     public void Death()
     {
-       _anim.DeathAnimation();
+        if (_behaviour)
+        {
+            _behaviour.enabled = false;
+        }
+        _anim.DeathAnimation();
+        //faire coroutine de mort
     }
 
 }

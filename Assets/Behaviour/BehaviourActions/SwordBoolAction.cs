@@ -16,7 +16,7 @@ public partial class SwordBoolAction : Action
         {
             Sword.Value.Activate();
         }
-        if (Active.Value==false)
+        else if (Active.Value==false)
         {
             Sword.Value.Deactivate();
         }
