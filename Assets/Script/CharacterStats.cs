@@ -9,6 +9,7 @@ public class CharacterStats : MonoBehaviour
     [SerializeField] private float _currentHealth = 100f;
     [SerializeField] private float _speed = 100f;
     [SerializeField] private float _attackCooldown = 1f;
+    [SerializeField] private HealthUI _healthBar;
 
 
     [SerializeField] UnityEvent OnHurtAnimation;
@@ -16,7 +17,16 @@ public class CharacterStats : MonoBehaviour
 
     public float Damage { get => _damage; set => _damage = value; }
     public float MaxHealth { get => _maxHealth; set => _maxHealth = value; }
-    public float CurrentHealth { get => _currentHealth; set => _currentHealth = value; }
+    public float CurrentHealth { get => _currentHealth; 
+        set
+        {
+            if (value > _maxHealth)
+            {
+                value = _maxHealth;
+            }
+            _healthBar.updateSlider(value);
+            _currentHealth = value;
+        } }
     public float Speed { get => _speed; set => _speed = value; }
     public float AttackCooldown { get => _attackCooldown; set => _attackCooldown = value; }
 
