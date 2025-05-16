@@ -4863,7 +4863,11 @@ MonoBehaviour:
   - item: {fileID: 5828768457790554535, guid: c510571c1d8177446aa8a013c50a27a9, type: 3}
     minAmount: 0
     maxAmount: 10
-    chance: 1
+    chance: 0.8
+  - item: {fileID: 5828768457790554535, guid: b8f2c357c51440b468f8d543062ffdf2, type: 3}
+    minAmount: 0
+    maxAmount: 2
+    chance: 0.2
 --- !u!64 &298756996
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -6766,6 +6770,10 @@ MonoBehaviour:
     minAmount: 1
     maxAmount: 10
     chance: 1
+  - item: {fileID: 5828768457790554535, guid: b8f2c357c51440b468f8d543062ffdf2, type: 3}
+    minAmount: 1
+    maxAmount: 2
+    chance: 0.2
 --- !u!1001 &461044118
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7558,7 +7566,11 @@ MonoBehaviour:
   - item: {fileID: 5828768457790554535, guid: c510571c1d8177446aa8a013c50a27a9, type: 3}
     minAmount: 0
     maxAmount: 10
-    chance: 1
+    chance: 0.8
+  - item: {fileID: 5828768457790554535, guid: b8f2c357c51440b468f8d543062ffdf2, type: 3}
+    minAmount: 0
+    maxAmount: 2
+    chance: 0.2
 --- !u!64 &496804520
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -10208,7 +10220,11 @@ MonoBehaviour:
   - item: {fileID: 5828768457790554535, guid: c510571c1d8177446aa8a013c50a27a9, type: 3}
     minAmount: 0
     maxAmount: 10
-    chance: 1
+    chance: 0.8
+  - item: {fileID: 5828768457790554535, guid: b8f2c357c51440b468f8d543062ffdf2, type: 3}
+    minAmount: 0
+    maxAmount: 2
+    chance: 0.2
 --- !u!64 &658677422
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -10818,7 +10834,11 @@ MonoBehaviour:
   - item: {fileID: 5828768457790554535, guid: c510571c1d8177446aa8a013c50a27a9, type: 3}
     minAmount: 0
     maxAmount: 10
-    chance: 1
+    chance: 0.8
+  - item: {fileID: 5828768457790554535, guid: b8f2c357c51440b468f8d543062ffdf2, type: 3}
+    minAmount: 0
+    maxAmount: 2
+    chance: 0.2
 --- !u!64 &682522392
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -11917,7 +11937,11 @@ MonoBehaviour:
   - item: {fileID: 5828768457790554535, guid: c510571c1d8177446aa8a013c50a27a9, type: 3}
     minAmount: 0
     maxAmount: 10
-    chance: 1
+    chance: 0.8
+  - item: {fileID: 5828768457790554535, guid: b8f2c357c51440b468f8d543062ffdf2, type: 3}
+    minAmount: 0
+    maxAmount: 2
+    chance: 0.2
 --- !u!64 &743874301
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -14258,7 +14282,11 @@ MonoBehaviour:
   - item: {fileID: 5828768457790554535, guid: c510571c1d8177446aa8a013c50a27a9, type: 3}
     minAmount: 0
     maxAmount: 10
-    chance: 1
+    chance: 0.8
+  - item: {fileID: 5828768457790554535, guid: b8f2c357c51440b468f8d543062ffdf2, type: 3}
+    minAmount: 0
+    maxAmount: 2
+    chance: 0.2
 --- !u!64 &883475136
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -14733,7 +14761,11 @@ MonoBehaviour:
   - item: {fileID: 5828768457790554535, guid: c510571c1d8177446aa8a013c50a27a9, type: 3}
     minAmount: 0
     maxAmount: 10
-    chance: 1
+    chance: 0.8
+  - item: {fileID: 5828768457790554535, guid: b8f2c357c51440b468f8d543062ffdf2, type: 3}
+    minAmount: 0
+    maxAmount: 2
+    chance: 0.2
 --- !u!64 &910354312
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -14959,7 +14991,11 @@ MonoBehaviour:
   - item: {fileID: 5828768457790554535, guid: c510571c1d8177446aa8a013c50a27a9, type: 3}
     minAmount: 0
     maxAmount: 10
-    chance: 1
+    chance: 0.8
+  - item: {fileID: 5828768457790554535, guid: b8f2c357c51440b468f8d543062ffdf2, type: 3}
+    minAmount: 0
+    maxAmount: 2
+    chance: 0.2
 --- !u!64 &915894110
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -15336,6 +15372,10 @@ MonoBehaviour:
     minAmount: 1
     maxAmount: 10
     chance: 1
+  - item: {fileID: 5828768457790554535, guid: b8f2c357c51440b468f8d543062ffdf2, type: 3}
+    minAmount: 1
+    maxAmount: 2
+    chance: 0.2
 --- !u!1001 &932620434
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15546,6 +15586,10 @@ MonoBehaviour:
     minAmount: 1
     maxAmount: 10
     chance: 1
+  - item: {fileID: 5828768457790554535, guid: b8f2c357c51440b468f8d543062ffdf2, type: 3}
+    minAmount: 1
+    maxAmount: 2
+    chance: 0.2
 --- !u!4 &944098807 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 5d68d1e38da0311479c8004fc150be37,
@@ -15762,6 +15806,10 @@ MonoBehaviour:
     minAmount: 1
     maxAmount: 10
     chance: 1
+  - item: {fileID: 5828768457790554535, guid: b8f2c357c51440b468f8d543062ffdf2, type: 3}
+    minAmount: 1
+    maxAmount: 2
+    chance: 0.2
 --- !u!1001 &956636976
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16238,7 +16286,11 @@ MonoBehaviour:
   - item: {fileID: 5828768457790554535, guid: c510571c1d8177446aa8a013c50a27a9, type: 3}
     minAmount: 0
     maxAmount: 10
-    chance: 1
+    chance: 0.8
+  - item: {fileID: 5828768457790554535, guid: b8f2c357c51440b468f8d543062ffdf2, type: 3}
+    minAmount: 0
+    maxAmount: 2
+    chance: 0.2
 --- !u!64 &980884675
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -16747,6 +16799,10 @@ MonoBehaviour:
     minAmount: 1
     maxAmount: 10
     chance: 1
+  - item: {fileID: 5828768457790554535, guid: b8f2c357c51440b468f8d543062ffdf2, type: 3}
+    minAmount: 1
+    maxAmount: 2
+    chance: 0.2
 --- !u!4 &1001573781 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 5d68d1e38da0311479c8004fc150be37,
@@ -17079,7 +17135,11 @@ MonoBehaviour:
   - item: {fileID: 5828768457790554535, guid: c510571c1d8177446aa8a013c50a27a9, type: 3}
     minAmount: 0
     maxAmount: 10
-    chance: 1
+    chance: 0.8
+  - item: {fileID: 5828768457790554535, guid: b8f2c357c51440b468f8d543062ffdf2, type: 3}
+    minAmount: 0
+    maxAmount: 2
+    chance: 0.2
 --- !u!64 &1020499965
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -18029,7 +18089,11 @@ MonoBehaviour:
   - item: {fileID: 5828768457790554535, guid: c510571c1d8177446aa8a013c50a27a9, type: 3}
     minAmount: 0
     maxAmount: 10
-    chance: 1
+    chance: 0.8
+  - item: {fileID: 5828768457790554535, guid: b8f2c357c51440b468f8d543062ffdf2, type: 3}
+    minAmount: 0
+    maxAmount: 2
+    chance: 0.2
 --- !u!64 &1058111230
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -19298,8 +19362,14 @@ MonoBehaviour:
     count: 10
   - _itemPrefab: {fileID: 5828768457790554535, guid: 70d975b7727cf284787eefcecebacb8f,
       type: 3}
-    count: 10
+    count: 25
   - _itemPrefab: {fileID: 5828768457790554535, guid: c510571c1d8177446aa8a013c50a27a9,
+      type: 3}
+    count: 25
+  - _itemPrefab: {fileID: 5828768457790554535, guid: b8f2c357c51440b468f8d543062ffdf2,
+      type: 3}
+    count: 10
+  - _itemPrefab: {fileID: 5828768457790554535, guid: 5a58356188edc244980eb744439a8cdb,
       type: 3}
     count: 10
 --- !u!4 &1143533521
@@ -20372,6 +20442,10 @@ MonoBehaviour:
     minAmount: 1
     maxAmount: 10
     chance: 1
+  - item: {fileID: 5828768457790554535, guid: b8f2c357c51440b468f8d543062ffdf2, type: 3}
+    minAmount: 1
+    maxAmount: 2
+    chance: 0.2
 --- !u!1001 &1212188011
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -21231,6 +21305,10 @@ MonoBehaviour:
     minAmount: 1
     maxAmount: 10
     chance: 1
+  - item: {fileID: 5828768457790554535, guid: b8f2c357c51440b468f8d543062ffdf2, type: 3}
+    minAmount: 1
+    maxAmount: 2
+    chance: 0.2
 --- !u!1001 &1267876929
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -21710,7 +21788,11 @@ MonoBehaviour:
   - item: {fileID: 5828768457790554535, guid: c510571c1d8177446aa8a013c50a27a9, type: 3}
     minAmount: 0
     maxAmount: 10
-    chance: 1
+    chance: 0.8
+  - item: {fileID: 5828768457790554535, guid: b8f2c357c51440b468f8d543062ffdf2, type: 3}
+    minAmount: 0
+    maxAmount: 2
+    chance: 0.2
 --- !u!64 &1313991100
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -24017,7 +24099,11 @@ MonoBehaviour:
   - item: {fileID: 5828768457790554535, guid: c510571c1d8177446aa8a013c50a27a9, type: 3}
     minAmount: 0
     maxAmount: 10
-    chance: 1
+    chance: 0.8
+  - item: {fileID: 5828768457790554535, guid: b8f2c357c51440b468f8d543062ffdf2, type: 3}
+    minAmount: 0
+    maxAmount: 2
+    chance: 0.2
 --- !u!64 &1457257950
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -24749,7 +24835,11 @@ MonoBehaviour:
   - item: {fileID: 5828768457790554535, guid: c510571c1d8177446aa8a013c50a27a9, type: 3}
     minAmount: 0
     maxAmount: 10
-    chance: 1
+    chance: 0.8
+  - item: {fileID: 5828768457790554535, guid: b8f2c357c51440b468f8d543062ffdf2, type: 3}
+    minAmount: 0
+    maxAmount: 2
+    chance: 0.2
 --- !u!64 &1504417970
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -24922,6 +25012,10 @@ MonoBehaviour:
     minAmount: 1
     maxAmount: 10
     chance: 1
+  - item: {fileID: 5828768457790554535, guid: b8f2c357c51440b468f8d543062ffdf2, type: 3}
+    minAmount: 1
+    maxAmount: 2
+    chance: 0.2
 --- !u!4 &1512228682 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 5d68d1e38da0311479c8004fc150be37,
@@ -25408,7 +25502,11 @@ MonoBehaviour:
   - item: {fileID: 5828768457790554535, guid: c510571c1d8177446aa8a013c50a27a9, type: 3}
     minAmount: 0
     maxAmount: 10
-    chance: 1
+    chance: 0.8
+  - item: {fileID: 5828768457790554535, guid: b8f2c357c51440b468f8d543062ffdf2, type: 3}
+    minAmount: 0
+    maxAmount: 2
+    chance: 0.2
 --- !u!64 &1549203222
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -25675,7 +25773,11 @@ MonoBehaviour:
   - item: {fileID: 5828768457790554535, guid: c510571c1d8177446aa8a013c50a27a9, type: 3}
     minAmount: 0
     maxAmount: 10
-    chance: 1
+    chance: 0.8
+  - item: {fileID: 5828768457790554535, guid: b8f2c357c51440b468f8d543062ffdf2, type: 3}
+    minAmount: 0
+    maxAmount: 2
+    chance: 0.2
 --- !u!64 &1567621430
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -26061,6 +26163,10 @@ MonoBehaviour:
     minAmount: 1
     maxAmount: 10
     chance: 1
+  - item: {fileID: 5828768457790554535, guid: b8f2c357c51440b468f8d543062ffdf2, type: 3}
+    minAmount: 1
+    maxAmount: 2
+    chance: 0.2
 --- !u!4 &1580355653 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 5d68d1e38da0311479c8004fc150be37,
@@ -27109,7 +27215,11 @@ MonoBehaviour:
   - item: {fileID: 5828768457790554535, guid: c510571c1d8177446aa8a013c50a27a9, type: 3}
     minAmount: 0
     maxAmount: 10
-    chance: 1
+    chance: 0.8
+  - item: {fileID: 5828768457790554535, guid: b8f2c357c51440b468f8d543062ffdf2, type: 3}
+    minAmount: 0
+    maxAmount: 2
+    chance: 0.2
 --- !u!64 &1661893972
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -27386,7 +27496,11 @@ MonoBehaviour:
   - item: {fileID: 5828768457790554535, guid: c510571c1d8177446aa8a013c50a27a9, type: 3}
     minAmount: 0
     maxAmount: 10
-    chance: 1
+    chance: 0.8
+  - item: {fileID: 5828768457790554535, guid: b8f2c357c51440b468f8d543062ffdf2, type: 3}
+    minAmount: 0
+    maxAmount: 2
+    chance: 0.2
 --- !u!64 &1685174510
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -27566,7 +27680,11 @@ MonoBehaviour:
   - item: {fileID: 5828768457790554535, guid: c510571c1d8177446aa8a013c50a27a9, type: 3}
     minAmount: 0
     maxAmount: 10
-    chance: 1
+    chance: 0.8
+  - item: {fileID: 5828768457790554535, guid: b8f2c357c51440b468f8d543062ffdf2, type: 3}
+    minAmount: 0
+    maxAmount: 2
+    chance: 0.2
 --- !u!64 &1704342466
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -28026,6 +28144,10 @@ MonoBehaviour:
     minAmount: 1
     maxAmount: 10
     chance: 1
+  - item: {fileID: 5828768457790554535, guid: b8f2c357c51440b468f8d543062ffdf2, type: 3}
+    minAmount: 1
+    maxAmount: 2
+    chance: 0.2
 --- !u!1001 &1737434015
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -28389,7 +28511,11 @@ MonoBehaviour:
   - item: {fileID: 5828768457790554535, guid: c510571c1d8177446aa8a013c50a27a9, type: 3}
     minAmount: 0
     maxAmount: 10
-    chance: 1
+    chance: 0.8
+  - item: {fileID: 5828768457790554535, guid: b8f2c357c51440b468f8d543062ffdf2, type: 3}
+    minAmount: 0
+    maxAmount: 2
+    chance: 0.2
 --- !u!64 &1754925850
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -28706,7 +28832,11 @@ MonoBehaviour:
   - item: {fileID: 5828768457790554535, guid: c510571c1d8177446aa8a013c50a27a9, type: 3}
     minAmount: 0
     maxAmount: 10
-    chance: 1
+    chance: 0.8
+  - item: {fileID: 5828768457790554535, guid: b8f2c357c51440b468f8d543062ffdf2, type: 3}
+    minAmount: 0
+    maxAmount: 2
+    chance: 0.2
 --- !u!64 &1774300208
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -28950,7 +29080,11 @@ MonoBehaviour:
   - item: {fileID: 5828768457790554535, guid: c510571c1d8177446aa8a013c50a27a9, type: 3}
     minAmount: 0
     maxAmount: 10
-    chance: 1
+    chance: 0.8
+  - item: {fileID: 5828768457790554535, guid: b8f2c357c51440b468f8d543062ffdf2, type: 3}
+    minAmount: 0
+    maxAmount: 2
+    chance: 0.2
 --- !u!64 &1787114748
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -29024,7 +29158,11 @@ MonoBehaviour:
   - item: {fileID: 5828768457790554535, guid: c510571c1d8177446aa8a013c50a27a9, type: 3}
     minAmount: 0
     maxAmount: 10
-    chance: 1
+    chance: 0.8
+  - item: {fileID: 5828768457790554535, guid: b8f2c357c51440b468f8d543062ffdf2, type: 3}
+    minAmount: 0
+    maxAmount: 2
+    chance: 0.2
 --- !u!64 &1787455577
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -29118,6 +29256,10 @@ MonoBehaviour:
     minAmount: 1
     maxAmount: 10
     chance: 1
+  - item: {fileID: 5828768457790554535, guid: b8f2c357c51440b468f8d543062ffdf2, type: 3}
+    minAmount: 1
+    maxAmount: 2
+    chance: 0.2
 --- !u!4 &1791588364 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 5d68d1e38da0311479c8004fc150be37,
@@ -29896,7 +30038,11 @@ MonoBehaviour:
   - item: {fileID: 5828768457790554535, guid: c510571c1d8177446aa8a013c50a27a9, type: 3}
     minAmount: 0
     maxAmount: 10
-    chance: 1
+    chance: 0.8
+  - item: {fileID: 5828768457790554535, guid: b8f2c357c51440b468f8d543062ffdf2, type: 3}
+    minAmount: 0
+    maxAmount: 2
+    chance: 0.2
 --- !u!64 &1858072488
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -30055,7 +30201,11 @@ MonoBehaviour:
   - item: {fileID: 5828768457790554535, guid: c510571c1d8177446aa8a013c50a27a9, type: 3}
     minAmount: 0
     maxAmount: 10
-    chance: 1
+    chance: 0.8
+  - item: {fileID: 5828768457790554535, guid: b8f2c357c51440b468f8d543062ffdf2, type: 3}
+    minAmount: 0
+    maxAmount: 2
+    chance: 0.2
 --- !u!64 &1865886997
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -30259,6 +30409,10 @@ MonoBehaviour:
     minAmount: 1
     maxAmount: 10
     chance: 1
+  - item: {fileID: 5828768457790554535, guid: b8f2c357c51440b468f8d543062ffdf2, type: 3}
+    minAmount: 1
+    maxAmount: 2
+    chance: 0.2
 --- !u!1001 &1896169012
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -31498,6 +31652,10 @@ MonoBehaviour:
     minAmount: 1
     maxAmount: 10
     chance: 1
+  - item: {fileID: 5828768457790554535, guid: b8f2c357c51440b468f8d543062ffdf2, type: 3}
+    minAmount: 1
+    maxAmount: 2
+    chance: 0.2
 --- !u!1 &1950070196 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 61103f6ffb3d382469f2180a3a9666ac,
@@ -31536,7 +31694,11 @@ MonoBehaviour:
   - item: {fileID: 5828768457790554535, guid: c510571c1d8177446aa8a013c50a27a9, type: 3}
     minAmount: 0
     maxAmount: 10
-    chance: 1
+    chance: 0.8
+  - item: {fileID: 5828768457790554535, guid: b8f2c357c51440b468f8d543062ffdf2, type: 3}
+    minAmount: 0
+    maxAmount: 2
+    chance: 0.2
 --- !u!64 &1950070201
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -31774,7 +31936,11 @@ MonoBehaviour:
   - item: {fileID: 5828768457790554535, guid: c510571c1d8177446aa8a013c50a27a9, type: 3}
     minAmount: 0
     maxAmount: 10
-    chance: 1
+    chance: 0.8
+  - item: {fileID: 5828768457790554535, guid: b8f2c357c51440b468f8d543062ffdf2, type: 3}
+    minAmount: 0
+    maxAmount: 2
+    chance: 0.2
 --- !u!64 &1979011972
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -31848,7 +32014,11 @@ MonoBehaviour:
   - item: {fileID: 5828768457790554535, guid: c510571c1d8177446aa8a013c50a27a9, type: 3}
     minAmount: 0
     maxAmount: 10
-    chance: 1
+    chance: 0.8
+  - item: {fileID: 5828768457790554535, guid: b8f2c357c51440b468f8d543062ffdf2, type: 3}
+    minAmount: 0
+    maxAmount: 2
+    chance: 0.2
 --- !u!64 &1979474791
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -31936,6 +32106,10 @@ MonoBehaviour:
     minAmount: 1
     maxAmount: 10
     chance: 1
+  - item: {fileID: 5828768457790554535, guid: b8f2c357c51440b468f8d543062ffdf2, type: 3}
+    minAmount: 1
+    maxAmount: 2
+    chance: 0.2
 --- !u!1 &1983502594 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 04634d4422539e74cb1dc9d424a3e149,
@@ -31974,7 +32148,11 @@ MonoBehaviour:
   - item: {fileID: 5828768457790554535, guid: c510571c1d8177446aa8a013c50a27a9, type: 3}
     minAmount: 0
     maxAmount: 10
-    chance: 1
+    chance: 0.8
+  - item: {fileID: 5828768457790554535, guid: b8f2c357c51440b468f8d543062ffdf2, type: 3}
+    minAmount: 0
+    maxAmount: 2
+    chance: 0.2
 --- !u!64 &1983502599
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -32139,7 +32317,11 @@ MonoBehaviour:
   - item: {fileID: 5828768457790554535, guid: c510571c1d8177446aa8a013c50a27a9, type: 3}
     minAmount: 0
     maxAmount: 10
-    chance: 1
+    chance: 0.8
+  - item: {fileID: 5828768457790554535, guid: b8f2c357c51440b468f8d543062ffdf2, type: 3}
+    minAmount: 0
+    maxAmount: 2
+    chance: 0.2
 --- !u!64 &2023725837
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -33695,6 +33877,10 @@ MonoBehaviour:
     minAmount: 1
     maxAmount: 10
     chance: 1
+  - item: {fileID: 5828768457790554535, guid: b8f2c357c51440b468f8d543062ffdf2, type: 3}
+    minAmount: 1
+    maxAmount: 2
+    chance: 0.2
 --- !u!1001 &2066530861
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -34523,6 +34709,10 @@ MonoBehaviour:
     minAmount: 1
     maxAmount: 10
     chance: 1
+  - item: {fileID: 5828768457790554535, guid: b8f2c357c51440b468f8d543062ffdf2, type: 3}
+    minAmount: 1
+    maxAmount: 2
+    chance: 0.2
 --- !u!1001 &2119913516
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -34660,6 +34850,10 @@ MonoBehaviour:
     minAmount: 1
     maxAmount: 10
     chance: 1
+  - item: {fileID: 5828768457790554535, guid: b8f2c357c51440b468f8d543062ffdf2, type: 3}
+    minAmount: 1
+    maxAmount: 2
+    chance: 0.2
 --- !u!1001 &2135601709
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -34777,7 +34971,11 @@ MonoBehaviour:
   - item: {fileID: 5828768457790554535, guid: c510571c1d8177446aa8a013c50a27a9, type: 3}
     minAmount: 0
     maxAmount: 10
-    chance: 1
+    chance: 0.8
+  - item: {fileID: 5828768457790554535, guid: b8f2c357c51440b468f8d543062ffdf2, type: 3}
+    minAmount: 0
+    maxAmount: 2
+    chance: 0.2
 --- !u!64 &2136736429
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -35509,7 +35707,11 @@ MonoBehaviour:
   - item: {fileID: 5828768457790554535, guid: c510571c1d8177446aa8a013c50a27a9, type: 3}
     minAmount: 0
     maxAmount: 10
-    chance: 1
+    chance: 0.8
+  - item: {fileID: 5828768457790554535, guid: b8f2c357c51440b468f8d543062ffdf2, type: 3}
+    minAmount: 0
+    maxAmount: 2
+    chance: 0.2
 --- !u!64 &8442608006150770300
 MeshCollider:
   m_ObjectHideFlags: 0
