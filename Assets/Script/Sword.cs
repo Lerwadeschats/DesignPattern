@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class Sword : MonoBehaviour
 {
-    [SerializeField] CharacterStats _stats;
+    [SerializeField] Stats _stats;
     Collider _collider;
 
     private void Start()
