@@ -16,7 +16,8 @@ public class DestructibleProps : Health,IDamageable
     {
         //spawn thing
         _drop.SpawnDrop();
-        TimeBeforeDestroy();
+        Destroy(gameObject);
+        //TimeBeforeDestroy();
     }
 
     async Task TimeBeforeDestroy()

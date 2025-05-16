@@ -78,8 +78,15 @@ public class Drop : MonoBehaviour
     {
         foreach (var item in _currentContent)
         {
-            _pool.ActivateItem(item, transform.position);
+            _pool.ActivateItem(item, GetRandomPos());
         }
+    }
+
+    Vector3 GetRandomPos()
+    {
+        Vector3 currentPos = transform.position;
+        Vector3 randVector = new Vector3(UnityEngine.Random.Range(currentPos.x - 1, currentPos.x + 1), 1, UnityEngine.Random.Range(currentPos.z - 1, currentPos.z + 1));
+        return randVector;
     }
     
 }
